@@ -41,7 +41,7 @@
             <div class="tito">Angaben zur Abrechnung</div>
             <div class="input">
                 <i class="material-icons">account_circle</i>
-                <input class="vorname" type="text" placeholder="Vorname">
+                <input class="surname" type="text" placeholder="Vorname">
                 <div class="space"></div>
                 <input class="name" type="text" placeholder="Name">
             </div>
@@ -67,7 +67,7 @@
                 $(this).removeClass('error');
             });
             $('.btnact').click(function(){
-                var vorname=$('.vorname').val();
+                var surname=$('.surname').val();
                 var name=$('.name').val();
                 var email=$('.email').val();
                 var remail=$('.remail').val();
@@ -76,7 +76,7 @@
                         $(this).addClass('error');
                     }
                 });
-                if(vorname=='' || name=='' || email=='' || remail==''){
+                if(surname=='' || name=='' || email=='' || remail==''){
                     $('.errormess').text('Enter all the fields.');
                 }else{
                     if (!isValidEmailAddress(email)) {
@@ -88,7 +88,7 @@
                             $('.email, .remail').addClass('error');
                         }else{
                             $('.errormess').text('');
-                            window.location.href = "https://www.mineko.de/?vorname="+vorname+"&name="+name+"&mail="+email;
+                            window.location.href = "https://www.mineko.de/?surname="+surname+"&name="+name+"&mail="+email;
                         }
                     }
                 }
