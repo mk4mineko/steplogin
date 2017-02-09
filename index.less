@@ -1,154 +1,156 @@
 body{
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Century Gothic, sans-serif;
-    background-color: #fff;
 }
 .iframe{
     display: flex;
-    flex-direction: column;
-    position: relative;
-    button, input{
-        outline: 0;
-    }
-    .logo{
-        text-align: center;
-        margin-bottom: 40px;
-        img{
-            
-        }
-    }
-    .steps{
+    justify-content: center;
+    align-items: center;
+    font-family: Century Gothic, sans-serif;
+    height: 400px;
+    .emarfi{
         display: flex;
-        text-align: center;
-        margin-left: 0px;
-        margin-right: 0px;
-        zoom: .9;
-        .logo{
-            margin-top: 12px;
-            margin-right: 20px;
-            height: 55px;
-        }
-        .step{
-            margin: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-weight: bold;
-            font-size: 14px;
-            color: gray;
-            &.done {
-                color: #70B42B;
-                .icon{
-                    background-color: #70B42B;
-                }
-            }
-            .icon{
-                width: 50px;
-                height: 50px;
-                line-height: 50px;
-                background-color: gray;
-                border-radius: 100px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                color: #fff;
-                font-size: 16px;
-            }
-        }
-        .sep{
-            width: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .line{
-                width: 100%;
-                border-bottom: 3px solid silver;
-                margin-top: -5px;
-            }
-        }
-    }
-    .main{
-        border: 1px solid silver;
-        background-color: #F2F2F2;
-        padding: 20px;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        margin-top: -15px;
+        flex-direction: column;
         position: relative;
-        border-radius: 10px;
-        .tria{
-            position: absolute;
-            top: -14px;
-            height: 15px;
-            left: 330px;
-            left: 246px;
+        padding-bottom: 30px;
+        button, input{
+            outline: 0;
         }
-        .tito{
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #727272;
-        }
-        .input{
-            margin-top: 12px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: flex-end;
-            .material-icons{
-                color: #9f9f9f;
-                font-size: 28px;
-                margin-right: 10px;
+        .logo{
+            text-align: center;
+            margin-bottom: 40px;
+            img{
+
             }
-            input{
-                width: 100%;
-                padding: 10px;
-                background-color: transparent;
-                border: none;
-                border-bottom: 1px solid #b5b5b5;
-                font-size: 16px;
-                &.error{
-                    border-bottom: 1px solid #ff7272;
-                    color: #ff7272;
-                    &::-webkit-input-placeholder{
-                        color: #ff7272;
+        }
+        .steps{
+            display: flex;
+            text-align: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            zoom: .9;
+            .logo{
+                margin-top: 12px;
+                margin-right: 20px;
+                height: 55px;
+            }
+            .step{
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: bold;
+                font-size: 14px;
+                color: gray;
+                &.done {
+                    color: #70B42B;
+                    .icon{
+                        background-color: #70B42B;
                     }
                 }
+                .icon{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    background-color: gray;
+                    border-radius: 100px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    font-size: 16px;
+                }
             }
-            .space{
-                width: 25px;
+            .sep{
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .line{
+                    width: 100%;
+                    border-bottom: 3px solid silver;
+                    margin-top: -5px;
+                }
             }
         }
-    }
-    .acti{
-        text-align: center;
-        margin-top: -20px;
-        z-index: 1;
-        .btnact{
-            height: 40px;
-            width: 50%;
-            border: 1px solid #639035;
-            box-shadow: 0px 0px 1px 1px #639035;
-            border-radius: 100px;
-            background-color: #70B42B;
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-            cursor: pointer;
+        .main{
+            border: 1px solid silver;
+            background-color: #F2F2F2;
+            padding: 20px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            margin-top: -15px;
             position: relative;
-            .material-icons{
+            border-radius: 10px;
+            .tria{
                 position: absolute;
-                right: 10px;
-                top: 7px;
+                top: -14px;
+                height: 15px;
+                left: 330px;
+                left: 246px;
+            }
+            .tito{
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: #727272;
+            }
+            .input{
+                margin-top: 12px;
+                margin-bottom: 12px;
+                display: flex;
+                align-items: flex-end;
+                .material-icons{
+                    color: #9f9f9f;
+                    font-size: 28px;
+                    margin-right: 10px;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid #b5b5b5;
+                    font-size: 16px;
+                    &.error{
+                        border-bottom: 1px solid #ff7272;
+                        color: #ff7272;
+                        &::-webkit-input-placeholder{
+                            color: #ff7272;
+                        }
+                    }
+                }
+                .space{
+                    width: 25px;
+                }
             }
         }
-    }
-    .errormess{
-        position: absolute;
-        bottom: -40px;
-        text-align: center;
-        color: #ff7272;
-        width: 100%;
+        .acti{
+            text-align: center;
+            margin-top: -20px;
+            z-index: 1;
+            .btnact{
+                height: 40px;
+                width: 50%;
+                border: 1px solid #639035;
+                box-shadow: 0px 0px 1px 1px #639035;
+                border-radius: 100px;
+                background-color: #70B42B;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                cursor: pointer;
+                position: relative;
+                .material-icons{
+                    position: absolute;
+                    right: 10px;
+                    top: 7px;
+                }
+            }
+        }
+        .errormess{
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            color: #ff7272;
+            width: 100%;
+        }
     }
 }
