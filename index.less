@@ -10,6 +10,7 @@ body{
 .iframe{
     display: flex;
     flex-direction: column;
+    position: relative;
     button, input{
         outline: 0;
     }
@@ -80,7 +81,7 @@ body{
         border-radius: 10px;
         .tria{
             position: absolute;
-            top: -15px;
+            top: -14px;
             height: 15px;
             left: 330px;
             left: 246px;
@@ -108,10 +109,10 @@ body{
                 border-bottom: 1px solid #b5b5b5;
                 font-size: 16px;
                 &.error{
-                    border-bottom: 1px solid red;
-                    color: red;
+                    border-bottom: 1px solid #ff7272;
+                    color: #ff7272;
                     &::-webkit-input-placeholder{
-                        color: red;
+                        color: #ff7272;
                     }
                 }
             }
@@ -124,7 +125,7 @@ body{
         text-align: center;
         margin-top: -20px;
         z-index: 1;
-        button{
+        .btnact{
             height: 40px;
             width: 50%;
             border: 1px solid #639035;
@@ -135,11 +136,19 @@ body{
             font-size: 14px;
             font-weight: bold;
             cursor: pointer;
+            position: relative;
+            .material-icons{
+                position: absolute;
+                right: 10px;
+                top: 7px;
+            }
         }
     }
     .errormess{
+        position: absolute;
+        bottom: -40px;
         text-align: center;
-        padding: 20px;
-        color: red;
+        color: #ff7272;
+        width: 100%;
     }
 }
