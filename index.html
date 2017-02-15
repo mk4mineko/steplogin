@@ -14,7 +14,7 @@
         <div class="emarfi">
             <div class="steps">
                 <div class="step">
-                    <img class="logo" src="assets/logo.png" alt="">
+                    <img class="logo" src="assets/logo_white.png" alt="">
                 </div>
                 <div class="step done">
                     <div class="text">Hochladen</div>
@@ -33,7 +33,7 @@
             </div>
             <div class="main">
                 <svg class="tria" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.35 17.02"><defs><style>.cls-1,.cls-2{fill:#f2f2f2;}.cls-1{stroke:gray;stroke-miterlimit:10;}.cls-3{opacity:0.54;}</style></defs><title>Artboard 14@1x</title><polyline class="cls-1" points="0.7 15.69 8.69 8.19 16.68 0.69 24.66 8.19 32.65 15.69"/><polyline class="cls-2" points="0 17.02 8.34 9.19 16.68 1.35 25.02 9.19 33.35 17.02"/></svg>           
-                <div class="tito">Nebenkosten prufen:</div>
+                <div class="tito">Jetzt Nebenkostenabrechnung prüfen lassen:</div>
                 <div class="input">
                     <i class="material-icons">account_circle</i>
                     <input class="surname" type="text" placeholder="Vorname">
@@ -75,7 +75,7 @@
                 if(surname=='' || name=='' || email=='' || remail==''){
                     $('.errormess').text('Bitte fullen Sie alle Felder aus.');
                 }else{
-                    if (!isValidEmailAddress(email)) {
+                    if (!isValidEmailAddress(email)){
                         $('.errormess').text('Die Email-Adresse ist nicht korrekt.');
                         $('.email').addClass('error');
                     }else{
@@ -93,6 +93,22 @@
                 var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
                 return pattern.test(emailAddress);
             };
+            
+            $.urlParam = function(name){
+                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                return results[1] || 0;
+            }
+            if($.urlParam('css')){
+                $("<link/>", {
+                    rel: "stylesheet",
+                    type: "text/css",
+                    href: $.urlParam('css')+".css"
+                }).appendTo("head");
+                
+                
+                $('.logo').attr('src', 'assets/logo.png')
+            }
+                        
         });
     </script>
     
