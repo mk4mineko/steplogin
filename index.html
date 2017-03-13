@@ -100,16 +100,10 @@
                 return results[1] || 0;
             }
             if($.urlParam('size')){
-              
               $('.emarfi').css('zoom',$.urlParam('size'))
-              
-//                $("<link/>", {
-//                    rel: "stylesheet",
-//                    type: "text/css",
-//                    href: $.urlParam('css')+".css"
-//                }).appendTo("head");
-//                $('.logo').attr('src', 'assets/logo.png')
+              $('.emarfi').css('-moz-transform','scale('+$.urlParam('size')+')')
             }
+          
                         
         });
     </script>
