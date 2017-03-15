@@ -59,9 +59,9 @@
     
     <script>
         $(function() {
-            $('.remail').bind("cut copy paste",function(e) {
-                e.preventDefault();
-            });
+//            $('.remail').bind("cut copy paste",function(e) {
+//                e.preventDefault();
+//            });
             $('input').focus(function(){
                 $(this).removeClass('error');
             });
@@ -87,7 +87,7 @@
                             $('.email, .remail').addClass('error');
                         }else{
                             $('.errormess').text('');
-                            window.location.href = "http://mineko.de/promietrecht?surname="+surname+"&name="+name+"&email="+email;
+                            window.open = "http://mineko.de/promietrecht?surname="+surname+"&name="+name+"&email="+email;
                         }
                     }
                 }
