@@ -1,10 +1,15 @@
-
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DEMOIFRAME</title>
     <link rel="stylesheet/less" type="text/css" href="index.less"/>
     <link rel="stylesheet/less" type="text/css" href="media.less"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
     <div class="iframe">
         <div class="emarfi">
            <div class="adv">Anzeige</div>
@@ -69,14 +74,14 @@
                     }
                 });
                 if(surname=='' || name=='' || email=='' || remail==''){
-                    $('.errormess').text('Bitte füllen Sie alle Felder aus.');
+                    $('.errormess').text('Bitte fullen Sie alle Felder aus.');
                 }else{
                     if (!isValidEmailAddress(email)){
-                        $('.errormess').text('Die E-Mail-Adresse ist nicht korrekt.');
+                        $('.errormess').text('Die Email-Adresse ist nicht korrekt.');
                         $('.email').addClass('error');
                     }else{
                         if(email != remail){
-                            $('.errormess').text('Die E-Mail-Adressen stimmen nicht uberein.');
+                            $('.errormess').text('Die Email-Adressen stimmen nicht uberein.');
                             $('.email, .remail').addClass('error');
                         }else{
                             $('.errormess').text('');
@@ -102,3 +107,6 @@
                         
         });
     </script>
+    
+</body>
+</html>
