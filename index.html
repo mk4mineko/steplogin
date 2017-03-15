@@ -97,14 +97,14 @@
                 return pattern.test(emailAddress);
             };
             
-            $.urlParam = function(name){
-                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-                return results[1] || 0;
-            }
-            if($.urlParam('size')){
-              $('body').css('zoom',$.urlParam('size'))
-              $('body').css('-moz-transform','scale('+$.urlParam('size')+')')
-            }
+//            $.urlParam = function(name){
+//                var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+//                return results[1] || 0;
+//            }
+//            if($.urlParam('size')){
+//              $('body').css('zoom',$.urlParam('size'))
+//              $('body').css('-moz-transform','scale('+$.urlParam('size')+')')
+//            }
           
                         
         });
