@@ -87,7 +87,10 @@
                             $('.email, .remail').addClass('error');
                         }else{
                             $('.errormess').text('');
-                            window.open = "http://mineko.de/promietrecht?surname="+surname+"&name="+name+"&email="+email;
+                            window.open(
+                              "http://mineko.de/promietrecht?surname="+surname+"&name="+name+"&email="+email,
+                              '_blank' // <- This is what makes it open in a new window.
+                            );
                         }
                     }
                 }
